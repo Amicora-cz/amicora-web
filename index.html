@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amicora — Stavíme software, který lidé skutečně používají</title>
+  <meta name="description" content="Amicora je tech studio za aplikací Nalekci. Rychlé, přehledné produkty bez zbytečného balastu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="logo"><span class="logo-mark"></span>Amicora</a>
+  <nav class="nav-links">
+    <a href="#produkt">Produkt</a>
+    <a href="#pristup">Jak pracujeme</a>
+    <a href="#tym">Tým</a>
+    <a href="#kariera">Kariéra</a>
+  </nav>
+  <a href="#kontakt" class="btn btn-primary btn-sm">Napište nám</a>
+</header>
+
+<main id="top">
+
+  <section class="hero container">
+    <div class="hero-copy">
+      <span class="mono accent">Tech studio · Praha</span>
+      <h1>Stavíme software, který lidé skutečně používají.</h1>
+      <p class="lead">Amicora je tým vývojářů a designérů za aplikací Nalekci. Rychlé, přehledné produkty bez zbytečného balastu.</p>
+      <div class="actions">
+        <a href="#produkt" class="btn btn-primary">Vyzkoušet Nalekci</a>
+        <a href="#pristup" class="btn btn-ghost">Jak pracujeme →</a>
+      </div>
+    </div>
+
+    <div class="card mock" aria-label="Ukázka aplikace Nalekci">
+      <div class="mock-bar"><span></span><span></span><span></span><span class="mono">nalekci.cz / rozvrh</span></div>
+      <div class="mock-body">
+        <aside class="mock-side">
+          <span class="active">Rozvrh</span><span>Lekce</span><span>Studenti</span><span>Platby</span><span>Nastavení</span>
+        </aside>
+        <div class="mock-main">
+          <div class="mock-head"><h3>Tento týden</h3><span class="mono accent">12 lekcí</span></div>
+          <div class="lesson"><i style="background:var(--accent)"></i><div><b>Angličtina B2 · skupina</b><small>Po 17:00 · 60 min · 6 / 8 míst</small></div><em class="ok">Potvrzeno</em></div>
+          <div class="lesson"><i style="background:#5b6cff"></i><div><b>Klavír · individuální</b><small>Út 15:30 · 45 min</small></div><em>Čeká na platbu</em></div>
+          <div class="lesson"><i style="background:#f59e0b"></i><div><b>Jóga · ranní</b><small>St 7:00 · 60 min · 11 / 12 míst</small></div><em class="ok">Potvrzeno</em></div>
+          <div class="stats">
+            <div><span class="mono">Obsazenost</span><strong>87 %</strong></div>
+            <div><span class="mono">Tržby</span><strong>[XX] Kč</strong></div>
+            <div><span class="mono">Nové</span><strong>+4</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust container">
+    <span class="mono">Používají nás</span>
+    <div class="logos">
+      <span>[PARTNER 1]</span><span>[PARTNER 2]</span><span>[PARTNER 3]</span><span>[PARTNER 4]</span><span>[PARTNER 5]</span>
+    </div>
+  </section>
+
+  <section id="produkt" class="section container">
+    <div class="section-head two-col">
+      <div>
+        <span class="mono accent">Produkt · Nalekci</span>
+        <h2>Jedno místo pro lekce, studenty i platby.</h2>
+      </div>
+      <p class="lead">Nalekci pomáhá lektorům a studiím řídit rozvrh, rezervace a platby bez tabulek a zpráv na Messengeru. Studenti se přihlásí na lekci na dvě klepnutí.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card feature">
+        <span class="mono">Fig 0.1</span>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        <h3>Rozvrh a rezervace</h3>
+        <p>Kapacity, čekací listiny, opakované lekce. Vše se aktualizuje v reálném čase pro lektora i studenty.</p>
+      </div>
+      <div class="card feature">
+        <span class="mono">Fig 0.2</span>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <h3>Platby bez papírování</h3>
+        <p>Permanentky, jednorázové platby i faktury. Přehled, kdo zaplatil a kdo ne, bez ručního párování.</p>
+      </div>
+      <div class="card feature">
+        <span class="mono">Fig 0.3</span>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16V9M12 16V4M18 16v-6"/></svg>
+        <h3>Přehled, který dává smysl</h3>
+        <p>Obsazenost, tržby a docházka na jedné obrazovce. Žádné exporty do Excelu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pristup" class="section container side-by-side">
+    <div class="sticky-head">
+      <span class="mono accent">Jak pracujeme</span>
+      <h2>Méně, ale pořádně.</h2>
+      <p class="lead">Malý tým, krátká smyčka od nápadu k nasazení. Radši jednu věc, která funguje, než pět, které skoro fungují.</p>
+    </div>
+    <ol class="principles">
+      <li><span class="mono accent">01</span><div><h3>Produkt před technologií</h3><p>Nejdřív pochopíme, co uživatel potřebuje. Stack vybíráme podle problému, ne podle trendů.</p></div></li>
+      <li><span class="mono accent">02</span><div><h3>Rychlost jako feature</h3><p>Aplikace musí reagovat okamžitě. Měříme výkon stejně přísně jako chyby.</p></div></li>
+      <li><span class="mono accent">03</span><div><h3>Otevřeně a přímo</h3><p>Veřejný changelog, jasné ceny, žádné skryté podmínky. Když něco nefunguje, řekneme to.</p></div></li>
+      <li><span class="mono accent">04</span><div><h3>Dlouhodobě udržitelný kód</h3><p>Píšeme kód, který za rok přečte kdokoli z týmu. Méně závislostí, méně překvapení.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="tym" class="section container">
+    <div class="section-head row">
+      <div>
+        <span class="mono accent">Tým</span>
+        <h2>Lidé za Amicorou</h2>
+      </div>
+      <span class="mono">[POČET] lidí · Praha / remote</span>
+    </div>
+    <div class="grid-4">
+      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Zakladatel · Produkt</small></div>
+      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Engineering</small></div>
+      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Design</small></div>
+      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Engineering</small></div>
+    </div>
+  </section>
+
+  <section id="kariera" class="section container side-by-side">
+    <div class="sticky-head">
+      <span class="mono accent">Kariéra</span>
+      <h2>Přidej se k nám.</h2>
+      <p class="lead">Hledáme lidi, kteří chtějí vlastnit celý problém, ne jen ticket.</p>
+    </div>
+    <div class="jobs">
+      <a href="#kontakt" class="card job"><div><b>[POZICE 1]</b><small>Praha / remote · plný úvazek</small></div><span>→</span></a>
+      <a href="#kontakt" class="card job"><div><b>[POZICE 2]</b><small>Praha / remote · plný úvazek</small></div><span>→</span></a>
+      <a href="#kontakt" class="card job dashed"><div><b>Nic pro tebe? Napiš nám i tak.</b><small>Otevřená přihláška</small></div><span>→</span></a>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section container cta">
+    <h2>Máte nápad nebo chcete Nalekci pro své studio?</h2>
+    <p class="lead">Ozveme se do jednoho pracovního dne.</p>
+    <div class="actions">
+      <a href="mailto:[EMAIL]" class="btn btn-primary">[EMAIL]</a>
+      <a href="#produkt" class="btn btn-ghost">Demo Nalekci</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer container">
+  <span>© 2026 Amicora s.r.o. · [IČO]</span>
+  <nav class="nav-links">
+    <a href="https://github.com/Amicora-cz">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Ochrana osobních údajů</a>
+  </nav>
+</footer>
+
+</body>
+</html>
