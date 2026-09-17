@@ -1,25 +1,30 @@
 # Amicora — prezentační web
 
-Statický web bez buildu. Otevři `index.html` nebo pusť libovolný static server:
+Statický web bez buildu. Otevři `index.html`, nebo pusť:
 
 ```bash
 npx serve .
 ```
 
-## Struktura
+Doména `amicora.cz` je nasměrovaná na Vercel.
 
-- `index.html` — celá stránka (hero, produkt Nalekci, jak pracujeme, tým, kariéra, kontakt)
-- `style.css` — design tokeny v `:root`, layout, responsivita
+## Stránky
 
-## Doplnit
+- `index.html` — úvod, produkt, přístup, tým, kariéra
+- `produkt.html` — NaLekci.cz
+- `o-spolecnosti.html` — údaje z obchodního rejstříku
+- `kontakt.html` — formulář a sídlo
+- `ochrana-osobnich-udaju.html` — GDPR
+- `404.html`
 
-Vše v `[HRANATÝCH ZÁVORKÁCH]`: partneři, fotky a jména týmu, pozice, e-mail, IČO.
+## Zdroj údajů
+
+Obchodní rejstřík, Krajský soud v Plzni, spis C 49035, výpis platný ke dni 17. 9. 2026:
+
+- Amicora s.r.o., IČO 300 34 337
+- sídlo Koželužská 3034/1, Jižní Předměstí, 301 00 Plzeň
+- zápis 16. 9. 2026
 
 ## Design
 
-Inspirace Linear / Vercel: tmavý ground, jeden akcent (`--accent`), Space Grotesk pro nadpisy, Geist pro text, Geist Mono pro labely.
-Návrh (desktop + mobil): https://claude.ai/artifact/Rivy9whoQL4qHnhoRGbv1E
-
-## Deploy
-
-GitHub Pages: Settings → Pages → Source: `main` / root.
+Tmavý ground, akcent `--accent`, Space Grotesk / Geist / Geist Mono. Původní návrh: https://claude.ai/artifact/Rivy9whoQL4qHnhoRGbv1E
