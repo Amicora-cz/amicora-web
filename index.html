@@ -4,93 +4,128 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amicora — Stavíme software, který lidé skutečně používají</title>
-  <meta name="description" content="Amicora je tech studio za aplikací Nalekci. Rychlé, přehledné produkty bez zbytečného balastu.">
+  <meta name="description" content="Amicora s.r.o. je tech studio za NaLekci.cz. Software, IT poradenství a webové produkty. Sídlo v Plzni, IČO 30034337.">
+  <link rel="canonical" href="https://amicora.cz/">
+  <meta property="og:title" content="Amicora s.r.o.">
+  <meta property="og:description" content="Tech studio za NaLekci.cz. Stavíme software, který lidé skutečně používají.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:url" content="https://amicora.cz/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Amicora s.r.o.",
+    "legalName": "Amicora s.r.o.",
+    "url": "https://amicora.cz",
+    "email": "info@amicora.cz",
+    "foundingDate": "2026-09-16",
+    "identifier": "30034337",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Koželužská 3034/1",
+      "addressLocality": "Plzeň",
+      "addressRegion": "Jižní Předměstí",
+      "postalCode": "301 00",
+      "addressCountry": "CZ"
+    }
+  }
+  </script>
 </head>
 <body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
 
 <header class="nav">
-  <a href="#top" class="logo"><span class="logo-mark"></span>Amicora</a>
-  <nav class="nav-links">
-    <a href="#produkt">Produkt</a>
+  <a href="index.html" class="logo"><span class="logo-mark">A</span>Amicora</a>
+  <nav class="nav-links" aria-label="Hlavní">
+    <a href="produkt.html">Produkt</a>
     <a href="#pristup">Jak pracujeme</a>
     <a href="#tym">Tým</a>
-    <a href="#kariera">Kariéra</a>
+    <a href="o-spolecnosti.html">O společnosti</a>
   </nav>
-  <a href="#kontakt" class="btn btn-primary btn-sm">Napište nám</a>
+  <a href="kontakt.html" class="btn btn-primary btn-sm nav-cta">Napište nám</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otevřít menu">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
 </header>
+<nav id="menu" class="nav-drawer" aria-label="Mobilní">
+  <a href="produkt.html">Produkt</a>
+  <a href="#pristup">Jak pracujeme</a>
+  <a href="#tym">Tým</a>
+  <a href="o-spolecnosti.html">O společnosti</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
 
-<main id="top">
+<main id="obsah">
 
   <section class="hero container">
     <div class="hero-copy">
-      <span class="mono accent">Tech studio · Praha</span>
+      <span class="mono accent">Tech studio · Plzeň</span>
       <h1>Stavíme software, který lidé skutečně používají.</h1>
-      <p class="lead">Amicora je tým vývojářů a designérů za aplikací Nalekci. Rychlé, přehledné produkty bez zbytečného balastu.</p>
+      <p class="lead">Jsme tři zakladatelé. Stavíme NaLekci.cz a další software, který má být rychlý a přehledný.</p>
       <div class="actions">
-        <a href="#produkt" class="btn btn-primary">Vyzkoušet Nalekci</a>
+        <a href="https://nalekci.cz/cs" class="btn btn-primary" rel="noopener">Otevřít NaLekci</a>
         <a href="#pristup" class="btn btn-ghost">Jak pracujeme →</a>
       </div>
     </div>
 
-    <div class="card mock" aria-label="Ukázka aplikace Nalekci">
-      <div class="mock-bar"><span></span><span></span><span></span><span class="mono">nalekci.cz / rozvrh</span></div>
-      <div class="mock-body">
-        <aside class="mock-side">
-          <span class="active">Rozvrh</span><span>Lekce</span><span>Studenti</span><span>Platby</span><span>Nastavení</span>
-        </aside>
-        <div class="mock-main">
-          <div class="mock-head"><h3>Tento týden</h3><span class="mono accent">12 lekcí</span></div>
-          <div class="lesson"><i style="background:var(--accent)"></i><div><b>Angličtina B2 · skupina</b><small>Po 17:00 · 60 min · 6 / 8 míst</small></div><em class="ok">Potvrzeno</em></div>
-          <div class="lesson"><i style="background:#5b6cff"></i><div><b>Klavír · individuální</b><small>Út 15:30 · 45 min</small></div><em>Čeká na platbu</em></div>
-          <div class="lesson"><i style="background:#f59e0b"></i><div><b>Jóga · ranní</b><small>St 7:00 · 60 min · 11 / 12 míst</small></div><em class="ok">Potvrzeno</em></div>
-          <div class="stats">
-            <div><span class="mono">Obsazenost</span><strong>87 %</strong></div>
-            <div><span class="mono">Tržby</span><strong>[XX] Kč</strong></div>
-            <div><span class="mono">Nové</span><strong>+4</strong></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <figure class="card shot">
+      <div class="mock-bar"><span></span><span></span><span></span><span class="mono">nalekci.cz</span></div>
+      <a href="https://nalekci.cz/cs" rel="noopener">
+        <img src="images/nalekci-home.jpg" width="935" height="916" alt="NaLekci.cz — úvod a nejbližší lekce">
+      </a>
+    </figure>
   </section>
 
   <section class="trust container">
-    <span class="mono">Používají nás</span>
-    <div class="logos">
-      <span>[PARTNER 1]</span><span>[PARTNER 2]</span><span>[PARTNER 3]</span><span>[PARTNER 4]</span><span>[PARTNER 5]</span>
+    <span class="mono">Společnost</span>
+    <div class="facts">
+      <div class="card fact"><strong>Plzeň</strong><span>sídlo společnosti</span></div>
+      <div class="card fact"><strong>IČO 30034337</strong><span>Amicora s.r.o.</span></div>
     </div>
   </section>
 
   <section id="produkt" class="section container">
     <div class="section-head two-col">
       <div>
-        <span class="mono accent">Produkt · Nalekci</span>
-        <h2>Jedno místo pro lekce, studenty i platby.</h2>
+        <span class="mono accent">Produkt · NaLekci</span>
+        <h2>Lekce, které stojí za vyzkoušení. Rezervace na dvě klepnutí.</h2>
       </div>
-      <p class="lead">Nalekci pomáhá lektorům a studiím řídit rozvrh, rezervace a platby bez tabulek a zpráv na Messengeru. Studenti se přihlásí na lekci na dvě klepnutí.</p>
+      <p class="lead">NaLekci.cz spojuje lektory s lidmi, kteří chtějí sportovat s někým, kdo jim sedne. Rozvrh, volná místa a rezervace na jednom místě — bez účtu, pokud ho nechcete.</p>
     </div>
     <div class="grid-3">
       <div class="card feature">
         <span class="mono">Fig 0.1</span>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
-        <h3>Rozvrh a rezervace</h3>
-        <p>Kapacity, čekací listiny, opakované lekce. Vše se aktualizuje v reálném čase pro lektora i studenty.</p>
+        <h3>Živý rozvrh</h3>
+        <p>Kapacity a zbývající místa vidíte u každé lekce. Rezervujete přesně to, co lektor vypsal.</p>
       </div>
       <div class="card feature">
         <span class="mono">Fig 0.2</span>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-        <h3>Platby bez papírování</h3>
-        <p>Permanentky, jednorázové platby i faktury. Přehled, kdo zaplatil a kdo ne, bez ručního párování.</p>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <h3>Ověření lektoři</h3>
+        <p>Než někoho zařadíme, spojíme se s ním osobně. Zůstávají jen lekce, které stojí za vyzkoušení.</p>
       </div>
       <div class="card feature">
         <span class="mono">Fig 0.3</span>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16V9M12 16V4M18 16v-6"/></svg>
-        <h3>Přehled, který dává smysl</h3>
-        <p>Obsazenost, tržby a docházka na jedné obrazovce. Žádné exporty do Excelu.</p>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <h3>Platba podle lektora</h3>
+        <p>Způsob platby určuje lektor a vidíte ho před potvrzením. Den před lekcí přijde připomínka s adresou.</p>
       </div>
+    </div>
+    <figure class="card shot shot-wide" style="margin-top:28px">
+      <div class="mock-bar"><span></span><span></span><span></span><span class="mono">nalekci.cz / lekce</span></div>
+      <a href="https://nalekci.cz/cs/search" rel="noopener">
+        <img src="images/nalekci-lekce.jpg" width="935" height="916" alt="NaLekci.cz — vyhledávání lekcí, filtry a volná místa">
+      </a>
+    </figure>
+    <div class="actions" style="margin-top:28px">
+      <a href="produkt.html" class="btn btn-ghost">Víc o NaLekci →</a>
     </div>
   </section>
 
@@ -103,7 +138,7 @@
     <ol class="principles">
       <li><span class="mono accent">01</span><div><h3>Produkt před technologií</h3><p>Nejdřív pochopíme, co uživatel potřebuje. Stack vybíráme podle problému, ne podle trendů.</p></div></li>
       <li><span class="mono accent">02</span><div><h3>Rychlost jako feature</h3><p>Aplikace musí reagovat okamžitě. Měříme výkon stejně přísně jako chyby.</p></div></li>
-      <li><span class="mono accent">03</span><div><h3>Otevřeně a přímo</h3><p>Veřejný changelog, jasné ceny, žádné skryté podmínky. Když něco nefunguje, řekneme to.</p></div></li>
+      <li><span class="mono accent">03</span><div><h3>Otevřeně a přímo</h3><p>Jasné údaje o společnosti, žádné skryté podmínky. Když něco nefunguje, řekneme to.</p></div></li>
       <li><span class="mono accent">04</span><div><h3>Dlouhodobě udržitelný kód</h3><p>Píšeme kód, který za rok přečte kdokoli z týmu. Méně závislostí, méně překvapení.</p></div></li>
     </ol>
   </section>
@@ -114,48 +149,50 @@
         <span class="mono accent">Tým</span>
         <h2>Lidé za Amicorou</h2>
       </div>
-      <span class="mono">[POČET] lidí · Praha / remote</span>
+      <span class="mono">3 zakladatelé · Plzeň / Praha</span>
     </div>
-    <div class="grid-4">
-      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Zakladatel · Produkt</small></div>
-      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Engineering</small></div>
-      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Design</small></div>
-      <div class="card person"><div class="photo"><span class="mono">[FOTO]</span></div><b>[JMÉNO]</b><small>Engineering</small></div>
-    </div>
-  </section>
-
-  <section id="kariera" class="section container side-by-side">
-    <div class="sticky-head">
-      <span class="mono accent">Kariéra</span>
-      <h2>Přidej se k nám.</h2>
-      <p class="lead">Hledáme lidi, kteří chtějí vlastnit celý problém, ne jen ticket.</p>
-    </div>
-    <div class="jobs">
-      <a href="#kontakt" class="card job"><div><b>[POZICE 1]</b><small>Praha / remote · plný úvazek</small></div><span>→</span></a>
-      <a href="#kontakt" class="card job"><div><b>[POZICE 2]</b><small>Praha / remote · plný úvazek</small></div><span>→</span></a>
-      <a href="#kontakt" class="card job dashed"><div><b>Nic pro tebe? Napiš nám i tak.</b><small>Otevřená přihláška</small></div><span>→</span></a>
+    <div class="grid-3">
+      <div class="card person">
+        <div class="photo"><span>JŠ</span></div>
+        <b>Ing. Jiří Šedivec</b>
+        <small>Zakladatel a jednatel</small>
+      </div>
+      <div class="card person">
+        <div class="photo"><span>VŠ</span></div>
+        <b>Ing. Vojtěch Šafránek</b>
+        <small>Zakladatel a jednatel</small>
+      </div>
+      <div class="card person">
+        <div class="photo"><span>JD</span></div>
+        <b>Ing. Jakub Devera</b>
+        <small>Zakladatel a jednatel · Praha</small>
+      </div>
     </div>
   </section>
 
-  <section id="kontakt" class="section container cta">
-    <h2>Máte nápad nebo chcete Nalekci pro své studio?</h2>
+  <section class="section container cta">
+    <h2>Máte nápad, nebo chcete NaLekci pro své lekce?</h2>
     <p class="lead">Ozveme se do jednoho pracovního dne.</p>
     <div class="actions">
-      <a href="mailto:[EMAIL]" class="btn btn-primary">[EMAIL]</a>
-      <a href="#produkt" class="btn btn-ghost">Demo Nalekci</a>
+      <a href="mailto:info@amicora.cz" class="btn btn-primary">info@amicora.cz</a>
+      <a href="https://nalekci.cz/cs" class="btn btn-ghost" rel="noopener">Otevřít NaLekci</a>
     </div>
   </section>
 
 </main>
 
 <footer class="footer container">
-  <span>© 2026 Amicora s.r.o. · [IČO]</span>
+  <div class="legal">
+    <span>© <span data-year>2026</span> Amicora s.r.o.</span>
+    <span>IČO 300 34 337 · Koželužská 3034/1, 301 00 Plzeň · C 49035, Krajský soud v Plzni</span>
+  </div>
   <nav class="nav-links">
     <a href="https://github.com/Amicora-cz">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Ochrana osobních údajů</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
   </nav>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
