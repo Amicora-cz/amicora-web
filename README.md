@@ -1,30 +1,33 @@
 # Amicora — prezentační web
 
-Statický web bez buildu. Otevři `index.html`, nebo pusť:
+Next.js 16 (App Router) + TypeScript. Stejný stack jako zbytek Amicora / NaLekci aplikací.
 
 ```bash
-npx serve .
+npm install
+npm run dev   # http://localhost:3010
 ```
 
-Doména `amicora.cz` je nasměrovaná na Vercel.
+Build:
+
+```bash
+npm run build
+npm start     # http://localhost:3010
+```
+
+Port `3010` — aby nekolidoval s nalekci-pulse / main-panel (`3000`), jaa-studio (`3001`) ani game appkami (`3020`/`3030`).
 
 ## Stránky
 
-- `index.html` — úvod, produkt, přístup, tým, kariéra
-- `produkt.html` — NaLekci.cz
-- `o-spolecnosti.html` — údaje z obchodního rejstříku
-- `kontakt.html` — formulář a sídlo
-- `ochrana-osobnich-udaju.html` — GDPR
-- `404.html`
+- `/` — úvod, produkt, přístup, tým
+- `/produkt` — NaLekci.cz
+- `/o-spolecnosti` — údaje z obchodního rejstříku
+- `/kontakt` — formulář a sídlo
+- `/ochrana-osobnich-udaju` — GDPR
 
 ## Zdroj údajů
 
-Obchodní rejstřík, Krajský soud v Plzni, spis C 49035, výpis platný ke dni 17. 9. 2026:
+Obchodní rejstřík, Krajský soud v Plzni, spis C 49035:
 
 - Amicora s.r.o., IČO 300 34 337
 - sídlo Koželužská 3034/1, Jižní Předměstí, 301 00 Plzeň
 - zápis 16. 9. 2026
-
-## Design
-
-Tmavý ground, akcent `--accent`, Space Grotesk / Geist / Geist Mono. Původní návrh: https://claude.ai/artifact/Rivy9whoQL4qHnhoRGbv1E
