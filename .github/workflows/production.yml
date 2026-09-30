@@ -1,0 +1,76 @@
+name: Production
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      # Link via env + `.vercel/project.json`. Do not pass `--scope=$VERCEL_ORG_ID`:
+      # `--scope` expects a team slug, not `team_…`, and CLI then 404s with
+      # "User not found". Also skip `vercel pull` / local `vercel build --prebuilt`:
+      # `pull` still calls GET /v2/user, which project-scoped tokens cannot (404).
+      # `vercel deploy --prod` can, and production env vars already live on
+      # the Vercel project. IDs may be Actions variables or secrets.
+      - name: Link Vercel project
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID || secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID || secrets.VERCEL_PROJECT_ID }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::error::VERCEL_TOKEN is empty. Add a Vercel token as a GitHub Actions secret on the production environment (https://vercel.com/account/tokens)."
+            exit 1
+          fi
+          if [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "::error::VERCEL_ORG_ID or VERCEL_PROJECT_ID is empty. Set them as Actions variables (or secrets). After \`vercel link\` they are orgId and projectId in .vercel/project.json."
+            exit 1
+          fi
+          mkdir -p .vercel
+          printf '{"orgId":"%s","projectId":"%s"}\n' "$VERCEL_ORG_ID" "$VERCEL_PROJECT_ID" > .vercel/project.json
+
+      - name: Remove Git metadata before deployment
+        run: rm -rf .git
+
+      - name: Deploy production
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID || secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID || secrets.VERCEL_PROJECT_ID }}
+        run: |
+          vercel deploy \
+            --prod \
+            --force \
+            --yes \
+            --token="$VERCEL_TOKEN"
