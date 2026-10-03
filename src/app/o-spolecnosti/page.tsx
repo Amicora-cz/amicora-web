@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { COMPANY, PARTNERS } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "O společnosti",
+  title: "O společnosti Amicora",
   description:
     "Amicora s.r.o., IČO 30034337, sídlo Plzeň. Údaje z obchodního rejstříku Krajského soudu v Plzni, spisová značka C 49035.",
   alternates: { canonical: "/o-spolecnosti" },

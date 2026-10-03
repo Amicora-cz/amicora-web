@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { COMPANY } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "Kontakt",
+  title: "Kontakt Amicora",
   description:
     "Napište Amicora s.r.o. na info@amicora.cz. Sídlo Koželužská 3034/1, 301 00 Plzeň, IČO 30034337.",
   alternates: { canonical: "/kontakt" },

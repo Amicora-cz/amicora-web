@@ -4,10 +4,18 @@ import { ProductShot } from "@/components/ProductShot";
 import { COMPANY, FOUNDERS } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: { absolute: "Amicora — Stavíme software, který lidé skutečně používají" },
+  title: {
+    absolute: "Amicora s.r.o. — oficiální web | tech studio z Plzně",
+  },
   description:
-    "Amicora s.r.o. je tech studio za NaLekci.cz. Software, IT poradenství a webové produkty. Sídlo v Plzni, IČO 30034337.",
+    "Oficiální web Amicora s.r.o. (IČO 30034337). Tech studio z Plzně za NaLekci.cz — software, IT poradenství a webové produkty.",
   alternates: { canonical: "/" },
+  openGraph: {
+    title: "Amicora s.r.o. — oficiální web",
+    description:
+      "Tech studio z Plzně. Stavíme NaLekci.cz a další software. IČO 30034337, amicora.cz.",
+    url: "/",
+  },
 };
 
 export default function HomePage() {
@@ -15,10 +23,11 @@ export default function HomePage() {
     <main id="obsah">
       <section className="hero container">
         <div className="hero-copy">
-          <span className="mono accent">Tech studio · Plzeň</span>
-          <h1>Stavíme software, který lidé skutečně používají.</h1>
+          <span className="mono accent">Amicora s.r.o. · Plzeň</span>
+          <h1>Amicora — stavíme software, který lidé skutečně používají.</h1>
           <p className="lead">
-            Stavíme NaLekci.cz a další software, který má být rychlý a přehledný.
+            Oficiální web Amicora s.r.o. Stavíme NaLekci.cz a další software, který má být rychlý a
+            přehledný.
           </p>
           <div className="actions">
             <a href={COMPANY.nalekciUrl} className="btn btn-primary" rel="noopener noreferrer">

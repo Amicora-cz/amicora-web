@@ -4,7 +4,7 @@ import { ProductShot } from "@/components/ProductShot";
 import { COMPANY } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "NaLekci",
+  title: "NaLekci — produkt Amicora",
   description:
     "NaLekci.cz je rezervační produkt Amicora s.r.o. Lekce od ověřených lektorů, živý rozvrh a rezervace online.",
   alternates: { canonical: "/produkt" },
